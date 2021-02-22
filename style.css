@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.cabecera{
+    display: flex;
+    height: 10rem;
+}
+
+.cabecera nav{
+    margin-top: 1.5rem;
+}
+
+.cabecera a{
+    font-size: 2.5rem;
+    margin: 10rem 2rem;
+}
+
+.cuerpo {
+    font-size: 3.5rem;
+}
+
+.cuerpo button {
+    font-size: 2.5rem;
+    margin: 3rem 1rem;
+    width: 23rem;
+    border-radius: 1rem;
+}
+
+.cuerpo img {
+    display: block;
+    width: 50rem;
+    margin: 10rem auto;
+}
+
+.cuerpo input{
+    display: block;
+    width: 50rem;
+    height: 4rem;
+    margin: 3rem auto;
+    border-radius: 1.6rem;
+}
+
+.cuerpo a {
+    margin-left: 1rem;
+}
+
+
+.cuerpo section{
+    display: flex;
+    justify-content: center;
+}
+
+.pie-de-pagina{
+
+}
+
