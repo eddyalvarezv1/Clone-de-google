@@ -6,107 +6,177 @@
 
 html{
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.copia-google{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
+body {
+    font-size: 1.3rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .cabecera{
-    display: flex;
+    margin-top: 1rem;
     width: 100%;
+    height: 6rem;
 }
 
 .cabecera nav{
-    margin-top: 1.5rem;
-}
-
-.cabecera a{
-    font-size: 2.5rem;
-    margin: 10rem 2rem;
-}
-
-.cuerpo {
-    width: 100%;
-    font-size: 3.5rem;
-    justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.cuerpo picture{
-    width: 100%;
-}
-
-.cuerpo section{
-    width: 100%;
-}
-
-.cuerpo button {
-    font-size: 2.5rem;
-    margin: 3rem 1rem;
-    width: 23rem;
-    border-radius: 1rem;
-}
-
-.cuerpo img {
-    display: block;
-    width: 50rem;
-    margin: 10rem auto;
-}
-
-.cuerpo input{
-    display: block;
-    width: 50rem;
-    height: 4rem;
-    margin: 3rem auto;
-    border-radius: 1.6rem;
-}
-
-.cuerpo a {
-    margin-left: 1rem;
-}
-
-
-.cuerpo section{
-    display: flex;
-    justify-content: center;
-}
-
-.pie-de-pagina{
-    margin-top: 23rem;
-    font-size: 2rem;
-    width: 100%;
-    height: 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #C0E9EF;
-}
-
-.pie-de-pagina__pais{
-    font-size: 1.7rem;
-    width: 100%;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-
-.pie-de-pagina__more{
-    display: flex;
-    width: 70%;
-}
-
-.pie-de-pagina__more a{
-    margin: 0 2rem;
-}
-
-.pie-de-pagina__setting {
-    display: flex;
-    width: 30%;
     justify-content: flex-end;
 }
 
-.pie-de-pagina__setting a{
-    margin: 0 3rem;
+.cabecera ul {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecera ul a {
+    margin-right: 3rem;
+    color: #000000;
+}
+
+.cabecera nav ul .cabecera__icono {
+    background-image: url("https://sites.google.com/site/elblogmusicbr/_/rsrc/1432053499601/logica/6D015BA9B.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.cabecera nav img {
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.cuerpo {
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.cuerpo .cuerpo__logo{
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.cuerpo .cuerpo__logo img{
+    width: 30rem;
+}
+
+.cuerpo .cuerpo__input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.cuerpo .cuerpo__input-container{
+    width: 52.5rem;
+    border-radius: 10rem;
+    border: 0.1rem solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo .cuerpo__input input {
+    width: 45rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+}
+
+.cuerpo .cuerpo__input-container:hover {
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.cuerpo .cuerpo__input .icono-busqueda {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.cuerpo .cuerpo__input .icono-micro {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+.cuerpo .cuerpo__botones {
+    width: 53rem;
+    margin: 0 auto;
+}
+
+.cuerpo .cuerpo__botones div{
+    display: inline-block;
+}
+
+.cuerpo__pais {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo .cuerpo__botones button{
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.cuerpo .cuerpo__botones button:hover{
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem #000001;
+    color: #222;
+}
+
+.pie-de-pagina{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f2f2f2;
+    border-top: 0.1rem solid #e4e4e4;
+}
+
+.pie-de-pagina ul{
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.pie-de-pagina__more{
+    justify-self: left;
+}
+
+.pie-de-pagina__setting {
+    justify-self: right;
+}
+
+.pie-de-pagina ul li a{
+    margin: 1rem;
+    color: #5f6368;
 }

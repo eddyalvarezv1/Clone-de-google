@@ -9,7 +9,6 @@
     <title> google </title>
 </head>
 <body>
-    <main class="copia-google">
         <header class="cabecera">
             <nav>
                 <ul>
@@ -17,47 +16,71 @@
                         <a href="#">Gmail</a>
                     </li>
                     <li>
-                        <a href="#">Images</a>
+                        <a href="#">Imágenes</a>
+                    </li>
+                    <li class="cabecera__icono">
+                        <a href="#"></a>
                     </li>
                     <li>
-                        <a href="#">Apps</a>
-                    </li>
-                    <li>
-                        <a href="#">Fotos</a>
+                        <a href="#">
+                            <img src="https://lh3.google.com/u/1/ogw/ADGmqu8sgNvOcEvKp1VZCEpN_pMdFlRYZGH6zpKJKCBv=s32-c-mo" alt="foto de perfil" />
+                        </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main class="cuerpo">
-            <picture>
-                <img src="https://www.google.com.mx/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="logo de google"/>
-            </picture>
-            <input type="text"/>
-            <section>
-                <button>Buscar con Google</button>
-                <button>I'm Feeling Lucky</button>
+            <section class="cuerpo__logo">
+                <picture>
+                    <img src="https://www.google.com.mx/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png" alt="logo de google"/>
+                </picture>
             </section>
-            <section>
-                <p>Google offered in:</p>
+            <section class="cuerpo__input">
+                <div class="cuerpo__input-container" >
+                    <span class="icono-busqueda"></span>
+                    <input type="text"/>
+                    <a class="icono-micro" href="#"</a>
+                </div>
+            </section>
+            <section class="cuerpo__botones">
+                <div>
+                    <button>Buscar con Google</button>
+                </div>
+                <div>
+                    <button>Me siento con suerte</button>
+                </div>
+            </section>
+            <section class="cuerpo__pais">
+                <p>Ofrecido por Google en:</p>
                 <a href="#">Español (Latinoamérica)</a>
             </section>
         </main>
         <footer class="pie-de-pagina">
-            <section class="pie-de-pagina__pais">
-                <p>Perú</p>
-            </section>
-            <section class="pie-de-pagina__more">
-                <a href="#">Advertising</a>
-                <a href="#">Bussines</a>
-                <a href="#">About</a>
-                <a href="#">How Search Works</a>
-            </section>
-            <section class="pie-de-pagina__setting">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </section>
+            <ul class="pie-de-pagina__more">
+                <li>
+                    <a href="#">Sobre Google</a>
+                </li>
+                <li>
+                    <a href="#">Publicidad</a>
+                </li>
+                <li>
+                    <a href="#">Negocios</a>
+                </li>
+                <li>
+                    <a href="#">Cómo funciona la Búsqueda</a>
+                </li>
+            </ul>
+            <ul class="pie-de-pagina__setting">
+                <li>
+                    <a href="#">Privacidad</a>
+                </li>
+                <li>
+                    <a href="#">Condiciones</a>
+                </li>
+                <li>
+                    <a href="#">Preferencias</a>
+                </li>
+            </ul>
         </footer>
-    </main>
 </body>
 </html>
